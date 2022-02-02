@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://coronatrackermadurai.000webhostapp.com/sitemap.xml

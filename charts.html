@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>corona tracker madurai</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+  <body>
+    <div class="page">
+      <!-- Main Navbar-->
+      <header class="header">
+        <nav class="navbar">
+          <!-- Search Box-->
+          <div class="search-box">
+            <button class="dismiss"><i class="icon-close"></i></button>
+            <form id="searchForm" action="#" role="search">
+              <input type="search" placeholder="What are you looking for..." class="form-control">
+            </form>
+          </div>
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand -->
+                  <div class="brand-text d-none d-lg-inline-block"><span>Coronatracker </span><strong>Madurai</strong></div>
+                  <div class="brand-text d-none d-sm-inline-block d-lg-none"><strong>coronatracker</strong></div></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+              </div>
+              <!-- Navbar Menu -->
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Search-->
+                <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="page-content d-flex align-items-stretch"> 
+        <!-- Side Navbar -->
+        <nav class="side-navbar">
+          <!-- Sidebar Header-->
+          <div class="sidebar-header d-flex align-items-center">
+            <div class="avatar"><a href="http://avinashroffl.github.io/"><img src="img/avatar-1.jpeg" alt="..." class="img-fluid rounded-circle"></a></div>
+            <div class="title">
+              <h1 class="h4">Avinash R</h1>
+              <p>Web Developer</p>
+            </div>
+          </div>
+          <!-- Sidebar Navidation Menus--><span class="heading">Contents</span>
+          <ul class="list-unstyled">
+            <li><a href="index.php"> <i class="icon-home"></i>Home </a></li>
+            <li><a href="tables.html"> <i class="icon-grid"></i>Data </a></li>
+            <li class="active"><a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
+            <li><a href="forms.html"> <i class="icon-padnote"></i>Corona risk checker</a></li>
+          </ul><span class="heading">Contact info</span>
+          <ul class="list-unstyled">
+            <li> <a href="dev.html"> <i class="icon-mail"></i>Developer info </a></li>
+			<li> <a href="tweets.html"> <i class="icon-mail"></i>Tweets from TN Govt. </a></li>
+          </ul>
+        </nav>
+        <div class="content-inner">
+          <!-- Page Header-->
+          <header class="page-header">
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom">Statistics</h2>
+            </div>
+          </header>
+          <!-- Breadcrumb-->
+          <div class="breadcrumb-holder container-fluid">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+              <li class="breadcrumb-item active">Pictorial Statistics of 2020</li>
+            </ul>
+          </div>
+          <!-- Charts Section-->
+          <section class="charts">
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Line Charts-->
+                <div class="col-lg-8">
+                  <div class="line-chart-example card">
+                    <div class="card-close">
+                      <div class="dropdown">
+                        <button type="button" id="closeCard1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                        <div aria-labelledby="closeCard1" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                      </div>
+                    </div>
+                    <div class="card-header d-flex align-items-center">
+                      <h3 class="h4">New Cases, Recovered Vs Month</h3>
+                    </div>
+                    <div class="card-body">
+                      <canvas id="lineChartExample"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="line-chart-example card no-margin-bottom">
+                    <div class="card-close">
+                      <div class="dropdown">
+                        <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                        <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                      </div>
+                    </div>
+                    <div class="card-header d-flex align-items-center">
+                      <h3 class="h4">Recovered,Dead Cases Vs Month </h3>
+                    </div>
+                    <div class="card-body">
+                      <canvas id="lineChartExample1"></canvas>
+                    </div>
+                  </div>
+                  <div class="line-chart-example card">
+                    <div class="card-close">
+                      <div class="dropdown">
+                        <button type="button" id="closeCard3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                        <div aria-labelledby="closeCard3" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <canvas id="lineChartExample2"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <!-- Doughnut Chart -->
+                <div class="col-lg-6">
+                  <div class="pie-chart-example card">
+                    <div class="card-close">
+                      <div class="dropdown">
+                        <button type="button" id="closeCard7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                        <div aria-labelledby="closeCard7" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                      </div>
+                    </div>
+                    <div class="card-header d-flex align-items-center">
+                      <h3 class="h4">Comparison</h3>
+                    </div>
+                    <div class="card-body">
+                      <canvas id="doughnutChartExample"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pie Chart -->
+                <div class="col-lg-6">
+                  <div class="pie-chart-example card">
+                    <div class="card-close">
+                      <div class="dropdown">
+                        <button type="button" id="closeCard8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                        <div aria-labelledby="closeCard8" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                      </div>
+                    </div>
+                    <div class="card-header d-flex align-items-center">
+                      <h3 class="h4">Distribution of Cases</h3>
+                    </div>
+                    <div class="card-body">
+                      <canvas id="pieChartExample"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Page Footer-->
+          <footer class="main-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>Avinash.R</p>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <!--<p>Design by Avinash<p>-->
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="js/charts-custom.js"></script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+  </body>
+</html>

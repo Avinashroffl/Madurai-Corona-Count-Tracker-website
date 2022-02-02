@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>corona tracker madurai</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+<style>
+  <body>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+    <div class="page">
+      <!-- Main Navbar-->
+      <header class="header">
+        <nav class="navbar">
+          <!-- Search Box-->
+          <div class="search-box">
+            <button class="dismiss"><i class="icon-close"></i></button>
+            <form id="searchForm" action="#" role="search">
+              <input type="search" placeholder="What are you looking for..." class="form-control">
+            </form>
+          </div>
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand -->
+                  <div class="brand-text d-none d-lg-inline-block"><span>Coronatracker </span><strong>Madurai</strong></div>
+                  <div class="brand-text d-none d-sm-inline-block d-lg-none"><strong>coronatracker</strong></div></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+              </div>
+              <!-- Navbar Menu -->
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Search-->
+                <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="page-content d-flex align-items-stretch"> 
+        <!-- Side Navbar -->
+        <nav class="side-navbar">
+          <!-- Sidebar Header-->
+          <div class="sidebar-header d-flex align-items-center">
+            <div class="avatar"><a href="http://avinashroffl.github.io/"><img src="img/avatar-1.jpeg" alt="..." class="img-fluid rounded-circle"></a></div>
+            <div class="title">
+              <h1 class="h4">Avinash R</h1>
+              <p>Web Developer</p>
+            </div>
+          </div>
+          <!-- Sidebar Navidation Menus--><span class="heading">Contents</span>
+          <ul class="list-unstyled">
+            <li><a href="index.php"> <i class="icon-home"></i>Home </a></li>
+            <li><a href="tables.html"> <i class="icon-grid"></i>Data </a></li>
+            <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
+            <li class="active"><a href="forms.html"> <i class="icon-padnote"></i>Corona risk checker</a></li>
+          </ul><span class="heading">Contact info</span>
+          <ul class="list-unstyled">
+            <li> <a href="dev.html"> <i class="icon-mail"></i>Developer info </a></li>
+			<li> <a href="tweets.html"> <i class="icon-mail"></i>Tweets from TN Govt. </a></li>
+          </ul>
+        </nav>
+        <div class="content-inner">
+          <!-- Page Header-->
+          <header class="page-header">
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom">Corona Risk Checker</h2>
+            </div>
+          </header>
+          <!-- Breadcrumb-->
+          <div class="breadcrumb-holder container-fluid">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+              <li class="breadcrumb-item active">Corona Risk Checker</li>
+            </ul>
+          </div>
+          <!-- Forms Section-->
+          <section class="forms"> 
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Form Elements -->
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-close">
+                      <div class="dropdown">
+                        <button type="button" id="closeCard5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                        <div aria-labelledby="closeCard5" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a></div>
+                      </div>
+                    </div>
+                    <div class="card-header d-flex align-items-center">
+                      <h3 class="h4" >Corona Symptom Checker</h3>
+                    </div>
+					<br>
+                    
+                       
+<div style="text-align:center">
+<form>
+<fieldset>
+  <p>ENTER YOUR NAME<br>
+  <input type="text" name="name" required></p><br>
+
+  <p>ENTER YOUR E-MAIL ID<br>
+  <input type="text" name="email" required></p><br>
+
+  <p>HAVE YOU GONE OVERSEAS BETWEEN DECEMBER 2019 & JULY 2020</p>
+  <input type="radio" id="YES" name="OVERSEAS" value='1' required>
+  <label for="YES">YES</label><br>
+  <input type="radio" id="NO" name="OVERSEAS" value='0'>
+  <label for="NO">NO</label><br>
+
+  <br>  
+
+  <p>PLEASE SELECT YOUR AGE</p>
+  <input type="radio" id="age1" name="age" value="0" required>
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="0">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="1">
+  <label for="age3">61 - 100</label><br>
+  <br>
+
+  <p>ARE YOU A FRONTLINE HEALTH WORKER?</p>
+   <input type="radio" id="YES" name="HEALTH" value="1" required>
+  <label for="YES">YES</label><br>
+  <input type="radio" id="NO" name="HEALTH" value="0">
+  <label for="NO">NO</label><br>
+
+  <p>DO YOU LIVE IN A RED ZONE?</p>
+   <input type="radio" id="YES" name="ZONE" value="1" required>
+  <label for="YES">YES</label><br>
+  <input type="radio" id="NO" name="ZONE" value="0">
+  <label for="NO">NO</label><br>
+
+  <p>DO YOU HAVE ANY OF THE 'COVID' SYMPTOMS?</p>
+   <input type="radio" id="YES" name="SYMPTOMS" value="1" required>
+  <label for="YES">YES</label><br>
+  <input type="radio" id="NO" name="SYMPTOMS" value="0">
+  <label for="NO">NO</label><br>
+
+
+  <p>HAVE YOU INSTALLED THE 'AAROGYA SETU' APP?</p>
+   <input type="radio" id="YES" name="APP" value="1" required>
+  <label for="YES">YES</label><br>
+  <input type="radio" id="NO" name="APP" value="0">
+  <label for="NO">NO</label><br>
+
+<div class="line"></div>
+                        <div class="form-group row">
+                          <div class="col-sm-4 offset-sm-3" >
+                            <button  class="btn btn-secondary">Cancel</button>
+                            <button id="myBtn" value="SUBMIT" onclick=myFunction() class="btn btn-primary" >SUBMIT</button>
+                          </div>
+						  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Your Results Will be mailed soon!!!! </p>
+  </div>
+
+</div>
+						  
+</fieldset>
+</form>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+   
+        </div>
+      </div>
+    </div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+  </body>
+</html>
